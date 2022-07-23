@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    background-color: #fff;
+    font-family: Tahoma,sans-serif;
+}
+.quiz-container {
+    width: 90%;
+    max-width: 1050px;
+    background-color: #f8f8f8;
+    margin: 30px auto;
+    padding: 20px;
+}
+.quiz-info {
+    padding: 15px;
+    display: flex;
+    background-color: #FFF;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.quiz-info  span {
+    font-weight: bold;
+    color: #43a047;
+}
+.quiz-area {
+    padding: 15px 20px;
+    background-color: #FFF;
+    margin-top: 10px;
+}
+.answer-area {
+    padding: 15px;
+    background-color: #FFF;
+}
+.answer-area .answer {
+    padding: 15px 20px;
+    background-color: #f8f8f8;
+}
+.answer-area .answer:not(:last-child){
+    border-bottom: 1px solid #dfdfdfdf;
+}
+.answer-area .answer input {
+    cursor: pointer;
+}
+.answer-area .answer input[type = "radio"]:checked + label {
+    color: #0075ff;
+    text-decoration: underline;
+}
+.answer-area .answer label {
+    font-weight: bold;
+    margin-left: 15px;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.submit {
+    border: none;
+    display: block;
+    width: 97%;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #0075ff;
+    color: #FFF;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    letter-spacing: 1.7px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 15px auto;
+}
+.bullets {
+    padding: 15px;
+    background-color: #FFF;
+    display: flex;
+}
+.bullets  .spans {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+.bullets  .spans span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+}
+.spans span.on {
+    background-color: #0075ff;
+}
+.disabled {
+    pointer-events: none;
+}
+.quiz-area {
+    font-size: 20px;
+}
+.results {
+    font-weight: bold;
+}
+span.good{
+    color: #0075ff;
+}
+span.bad{
+    color: red;
+}
+span.perfect{
+    color: green;
+}
